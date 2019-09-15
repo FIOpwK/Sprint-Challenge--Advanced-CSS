@@ -11,6 +11,13 @@
     p {
       padding:0 15px;
     }
+
+    .main-header {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    
   
   }
 
@@ -18,6 +25,26 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 150%;
+    
+      .blast {
+        justify-content: center;
+        width: 50%;
+      }
+
+      .launch {
+        display: none;
+      }
+
+      .sky {
+        display: none;
+      }
+   }
 
     img {
       width: 28%;
@@ -46,6 +73,14 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      width: 200%;
+       
+   }
+
     .walk-text {
       width: 50%;
 
@@ -55,21 +90,21 @@
 
       p {
         margin-bottom: 26px;
-      }
+      } 
 
-      .btn {
-      }
     }
-
+  
+   
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
-      img {
+    
+        img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        }
+       
       }
-    }
   }
 }// home
